@@ -1,0 +1,249 @@
+/* Headaer */
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%; }
+
+a {
+	text-decoration: none !important;
+	color: #232323;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #2ecc71;
+}
+
+#menuToggle {
+	display: block;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#menuToggle input {
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 2;
+	-webkit-touch-callout: none;
+}
+
+#menuToggle span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+	background: #cdcdcd;
+	border-radius: 3px;
+	z-index: 1;
+	transform-origin: 4px 0px;
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+	background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+	opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+	transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: #232323;
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+	opacity: 1;
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+	position: absolute;
+	width: 300px;
+	margin: -100px 0 0 0;
+	padding: 50px;
+	padding-top: 125px;
+	right: -100px;
+	/* background: #ededed; */
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	transform-origin: 0% 0%;
+	transform: translate(100%, 0);
+
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+	
+}
+
+#menu li {
+	padding: 10px 0;
+    font-size: 22px;
+    color: black; 
+    
+}
+
+#menuToggle input:checked~ul {
+	transform: scale(1.0, 1.0);
+	opacity: 1;
+}
+
+.franchise-btn {
+    float: right;
+    text-align: left;
+    top: initial;
+    margin-top: 19.8em;
+    border-radius: 0;
+    width: 220px;
+    color: oldlace;
+    background: #fd5101;
+    border: none;
+    padding: 12px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+	font-weight: 600;
+	margin-right: -616px;
+}
+
+.banner-text {
+	padding-right: 20rem;
+    float: right;
+    padding-top: 20rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: #141415;
+}
+
+/* ============================= */
+
+ .section-head {
+	padding: 30px;
+text-align: center; 
+font-weight: 600;
+}
+.text-muted{
+font-size: 18px;
+text-align: justify;
+}
+.moto-vision{
+	margin:0px;
+padding-top: 50px;
+}
+.sub-text{
+	/* padding-top: 25px; */
+    text-align: justify;
+}
+.subheading{
+	padding-top: 65px;
+
+}
+.asd{display: flex;}
+.mission-block{display: flex;}
+.miss-txt{
+	text-align: justify;
+    font-size: 18px;
+	padding: 7px 0px;
+}
+.mission-value{    margin-left: 40px;}
+.mission-ind
+{
+margin-left: 70px;
+	width: 100%;}
+	
+	.mission .section-head {
+		padding: 30px;
+	text-align: center; 
+	}
+
+	ul   {font-size: 22px;
+    line-height: 40px;
+    font-weight: 400;
+}
+ul.marker{color:orange}
+
+/* ========Testimonial===================== */
+
+.carousel-wrap {
+	margin: 90px auto;
+	padding: 0 5%;
+	width: 80%;
+	position: relative;
+  }
+  
+  /* fix blank or flashing items on carousel */
+  .owl-carousel .item {
+	position: relative;
+	z-index: 100; 
+	-webkit-backface-visibility: hidden; 
+  }
+  
+  /* end fix */
+  .owl-nav > div {
+	margin-top: -26px;
+	position: absolute;
+	top: 50%;
+	color: #cdcbcd;
+  }
+  
+  .owl-nav i {
+	font-size: 52px;
+  }
+  
+  .owl-nav .owl-prev {
+	left: -30px;
+  }
+  
+  .owl-nav .owl-next {
+	right: -30px;
+  }
+  /* ================================ */
+  .footer-text{
+	  font-size: 20px;
+	  font-weight: 500;
+
+  }
+  .contact-dtls{
+  padding: 40px;
+  text-align: justify;
+}
+  .cont-details{
+	font-size: 18px;
+	font-weight: 500;
+  }
+  .fa-map-marker { 
+	  color: orange;
+  font-size: 25px;}
+  .cont-details{
+	  padding-bottom: 5px;
+  }
+
+.fa-long-arrow-right{
+	color: orange;
+    font-size: 35px !important;
+    padding: 14px;
+    font-weight: 600 !important;
+}
+.mission-block{
+	padding-bottom: 20px;
+}
+.fa-long-arrow-down{
+	padding-left: 20px;
+}
